@@ -2902,7 +2902,6 @@ _local_genrule_internal = rule(
 def _local_genrule(**kwargs):
     _local_genrule_internal(
         exec_compatible_with = [
-            "@local_execution_config_platform//:platform_constraint",
         ],
         **kwargs
     )

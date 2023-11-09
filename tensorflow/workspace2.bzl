@@ -93,11 +93,11 @@ def _initialize_third_party():
 
 # Toolchains & platforms required by Tensorflow to build.
 def _tf_toolchains():
-    native.register_execution_platforms("@local_execution_config_platform//:platform")
-    native.register_toolchains("@local_execution_config_python//:py_toolchain")
+    # native.register_execution_platforms("@local_execution_config_platform//:platform")
+    # native.register_toolchains("@local_execution_config_python//:py_toolchain")
 
     # Loads all external repos to configure RBE builds.
-    initialize_rbe_configs()
+    # initialize_rbe_configs()
 
     # Note that we check the minimum bazel version in WORKSPACE.
     clang6_configure(name = "local_config_clang6")
