@@ -72,3 +72,9 @@ filegroup(
     srcs = EIGEN_MPL2_SOURCES,
     visibility = ["//visibility:public"],
 )
+
+alias(
+    name = "eigen",
+    actual = ":eigen3",
+    visibility = ["//visibility:public"],
+)
