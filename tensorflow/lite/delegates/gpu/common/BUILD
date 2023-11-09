@@ -257,7 +257,7 @@ cc_library(
         "@com_google_absl//absl/container:flat_hash_set",
         "@com_google_absl//absl/status",
         "@com_google_absl//absl/strings",
-    ] + tf_platform_alias("custom_parsers", "//tensorflow/lite/delegates/gpu/common/"),
+    ] + ["//tensorflow/lite/delegates/gpu/common/mediapipe:custom_parsers"],
 )
 
 cc_test(
