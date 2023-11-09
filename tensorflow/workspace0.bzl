@@ -7,7 +7,6 @@ load("@build_bazel_rules_apple//apple:repositories.bzl", "apple_rules_dependenci
 load("@build_bazel_rules_swift//swift:repositories.bzl", "swift_rules_dependencies")
 load("@com_github_grpc_grpc//bazel:grpc_extra_deps.bzl", "grpc_extra_deps")
 load("@local_config_android//:android.bzl", "android_workspace")
-load("@rules_foreign_cc//foreign_cc:repositories.bzl", "rules_foreign_cc_dependencies")
 load("//third_party/googleapis:repository_rules.bzl", "config_googleapis")
 
 def _tf_bind():
@@ -132,7 +131,6 @@ def workspace():
     # at the end of the WORKSPACE file.
     _tf_bind()
 
-    rules_foreign_cc_dependencies()
     config_googleapis()
 
 # Alias so it can be loaded without assigning to a different symbol to prevent
