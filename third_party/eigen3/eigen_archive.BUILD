@@ -61,3 +61,9 @@ filegroup(
     srcs = EIGEN_SOURCES,
     visibility = ["//visibility:public"],
 )
+
+alias(
+    name = "eigen",
+    actual = ":eigen3",
+    visibility = ["//visibility:public"],
+)
