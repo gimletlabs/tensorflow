@@ -336,7 +336,7 @@ def _tf_repositories():
         sha256 = "31da5562f44c5f15d63340a09a4fd62b48c45620cd302f77a6d9acf0077879bd",
         strip_prefix = "giflib-5.2.1",
         system_build_file = "//third_party/systemlibs:gif.BUILD",
-        urls = tf_mirror_urls("https://pilotfiber.dl.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz"),
+        urls = ["https://storage.googleapis.com/mirror.tensorflow.org/pilotfiber.dl.sourceforge.net/project/giflib/giflib-5.2.1.tar.gz"],
     )
 
     tf_http_archive(
