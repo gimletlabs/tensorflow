@@ -14,7 +14,7 @@ def workspace(with_rules_cc = True):
     Args:
       with_rules_cc: Unused, to be removed soon.
     """
-    native.register_toolchains("@local_config_python//:py_toolchain")
+    # native.register_toolchains("@local_config_python//:py_toolchain")
     rules_pkg_dependencies()
 
     closure_repositories()
