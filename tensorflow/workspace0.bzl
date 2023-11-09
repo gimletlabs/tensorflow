@@ -132,7 +132,6 @@ def workspace():
     # at the end of the WORKSPACE file.
     _tf_bind()
 
-    grpc_extra_deps()
     rules_foreign_cc_dependencies()
     config_googleapis()
 
