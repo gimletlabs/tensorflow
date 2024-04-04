@@ -12,6 +12,7 @@ package(
         "//learning/brain/mobile/programmability:__subpackages__",
         "//tensorflow/lite/experimental/tf_runtime:__subpackages__",
         "//tensorflow/lite/testing:__subpackages__",
+        "@gml//:__subpackages__",
     ],
     licenses = ["notice"],
 )
