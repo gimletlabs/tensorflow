@@ -1,14 +1,26 @@
-load(
-    "//third_party/py/rules_pywrap:pywrap.default.bzl",
-    _pybind_extension = "pybind_extension",
-    _pywrap_aware_cc_import = "pywrap_aware_cc_import",
-    _pywrap_aware_filegroup = "pywrap_aware_filegroup",
-    _pywrap_aware_genrule = "pywrap_aware_genrule",
-    _pywrap_common_library = "pywrap_common_library",
-    _pywrap_library = "pywrap_library",
-    _stripped_cc_info = "stripped_cc_info",
-    _use_pywrap_rules = "use_pywrap_rules",
-)
+def _pybind_extension(*args, **kwargs):
+    pass
+
+def _use_pywrap_rules(*args, **kwargs):
+    pass
+
+def _pywrap_library(*args, **kwargs):
+    pass
+
+def _pywrap_common_library(*args, **kwargs):
+    pass
+
+def _stripped_cc_info(*args, **kwargs):
+    pass
+
+def _pywrap_aware_filegroup(*args, **kwargs):
+    pass
+
+def _pywrap_aware_genrule(*args, **kwargs):
+    pass
+
+def _pywrap_aware_cc_import(*args, **kwargs):
+    pass
 
 pybind_extension = _pybind_extension
 use_pywrap_rules = _use_pywrap_rules
