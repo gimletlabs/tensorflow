@@ -1,10 +1,7 @@
 """Provides project and wheel version data for TensorFlow."""
 
-load(
-    "//tensorflow:tf_version.default.bzl",
-    "SEMANTIC_VERSION_SUFFIX",
-    "VERSION_SUFFIX",
-)
+SEMANTIC_VERSION_SUFFIX = "-dev0+selfbuilt"
+VERSION_SUFFIX = ".dev0+selfbuilt"
 
 # These constants are used by the targets //third_party/tensorflow/core/public:release_version,
 # //third_party/tensorflow:tensorflow_bzl and //third_party/tensorflow/tools/pip_package:setup_py.
